@@ -1,0 +1,27 @@
+
+
+
+ rconsoleprint("[KEY] ")
+ rconsoleprint("Enter Key Here: ")
+
+local key = rconsoleinput("key1")
+
+
+
+
+
+
+
+if key == "key1" then
+rconsoleclear()
+rconsoleinfo("KEY VALID")
+rconsoleprint('@@WHITE@@')
+wait(2)
+rconsoleinfo("Boot Successful")
+rconsoleclose()
+--//launch below
+loadstring(game:HttpGet('https://raw.githubusercontent.com/ddosamacousin1/calamari-roblox-scripthub/main/launch'))()
+--//launch above
+end
+rconsoleinfo("KEY INCORRECT")
+rconsoleinfo("RE-EXECUTE the script.")
