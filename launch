@@ -5,4 +5,121 @@
 
 --// n1wu was here
 
+loadstring(game:HttpGet('https://github.com/ddosamacousin1/calamari-roblox-scripthub/blame/main/places'))()
 
+ rconsolename("Calamari :// Key System")
+rconsoleclear()
+wait(0.5)
+rconsoleinfo("VERSION: 0.01")
+wait(0.5)
+rconsoleinfo("Key Link : ")
+
+
+
+
+ rconsoleprint("[KEY] ")
+ rconsoleprint("Enter Key Here: ")
+
+local key = rconsoleinput("key1")
+
+
+
+
+
+
+
+if key == "key1" then
+rconsoleclear()
+rconsoleinfo("KEY VALID")
+rconsoleprint('@@WHITE@@')
+wait(2)
+rconsoleinfo("Boot Successful")
+rconsoleclose()
+
+--the script--
+if game.PlaceId == v1 then
+
+local Library = loadstring(game:HttpGet('https://raw.githubusercontent.com/Rain-Design/Libraries/main/Shaman/Library.lua'))()
+local Flags = Library.Flags
+
+local Window = Library:Window({
+    Text = "Calamari :// Red Light, Green Light"
+})
+
+local Tab = Window:Tab({
+    Text = "Main"
+})
+
+
+
+
+local Section = Tab:Section({
+    Text = "Ban Proof"
+})
+
+local a = Section:Toggle({
+    Text = "Chat AntiLog",
+    Callback = function(v)
+getgenv().Loop = v
+
+while wait() do
+	if getgenv().Loop == true then 
+	
+	local CloneFunction = clonefunction
+local CheckCaller = CloneFunction(checkcaller)
+local HookFunction = CloneFunction(hookfunction)
+local LocalPlayer = game.Players.PlayerAdded:wait()
+LocalPlayer.CharacterAdded:wait()
+wait(4)
+local PostMessage = require(LocalPlayer:WaitForChild("PlayerScripts", 1/0):WaitForChild("ChatScript", 1/0):WaitForChild("ChatMain", 1/0)).MessagePosted
+getgenv().MessageEvent = Instance.new("BindableEvent")
+
+local OldFunctionHook
+local PostMessageHook = function(self, msg)
+   if not CheckCaller() and self == PostMessage then
+       MessageEvent:Fire(msg)
+       return
+   end
+   return OldFunctionHook(self, msg)
+end
+OldFunctionHook = HookFunction(PostMessage.fire, PostMessageHook)
+wait(1000)
+
+	end
+end
+end
+})
+
+local Section2 = Tab:Section({
+    Text = "FOV"
+})
+
+local Section3 = Tab:Section({
+    Text = "Misc",
+    Side = "Right"
+})
+
+ChamsSection:Toggle({
+    Text = "Enabled"
+})
+
+ChamsSection:Toggle({
+    Text = "Color"
+})
+
+ChamsSection:Toggle({
+    Text = "Filled"
+})
+
+ChamsSection:Toggle({
+    Text = "Team Check"
+})
+
+end
+rconsoleinfo("KEY INCORRECT")
+rconsoleinfo("RE-EXECUTE the script.")
+
+elseif game.PlaceId == v2 then
+
+end
+end
