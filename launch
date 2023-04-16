@@ -5,36 +5,13 @@
 
 --// n1wu was here
 
-loadstring(game:HttpGet('https://github.com/ddosamacousin1/calamari-roblox-scripthub/blame/main/places'))()
-
- rconsolename("Calamari :// Key System")
-rconsoleclear()
-wait(0.5)
-rconsoleinfo("VERSION: 0.01")
-wait(0.5)
-rconsoleinfo("Key Link : ")
+--// Supported: Red Light, Green Light (v1)
 
 
+local v1 = 7540891731
+local v2 = 0
+local v3 = 0
 
-
- rconsoleprint("[KEY] ")
- rconsoleprint("Enter Key Here: ")
-
-local key = rconsoleinput("key1")
-
-
-
-
-
-
-
-if key == "key1" then
-rconsoleclear()
-rconsoleinfo("KEY VALID")
-rconsoleprint('@@WHITE@@')
-wait(2)
-rconsoleinfo("Boot Successful")
-rconsoleclose()
 
 --the script--
 if game.PlaceId == v1 then
