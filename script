@@ -1,11 +1,20 @@
 
 
 
+ rconsolename("Calamari :// Key System")
+rconsoleclear()
+wait(0.5)
+rconsoleinfo("VERSION: 0.01")
+wait(0.5)
+rconsoleinfo("Key Link : ")
+
+
+
+
  rconsoleprint("[KEY] ")
  rconsoleprint("Enter Key Here: ")
 
 local key = rconsoleinput("key1")
-
 
 
 
